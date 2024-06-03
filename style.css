@@ -1,34 +1,61 @@
+/* General Styles */
 body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #e0e5ec; /* Light background for the Neumorphism effect */
+    background-color: #e0e5ec;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px; 
 }
 
+/* Card Styles */
 .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #e0e5ec;
+    padding: 30px;
+    border-radius: 20px; 
     box-shadow:
-        -3px -3px 8px rgba(255, 255, 255, 0.8),
-         3px  3px 8px rgba(224, 224, 224, 0.8);
+        10px 10px 20px #c8d0e7, 
+        -10px -10px 20px #fff; 
 }
 
+/* Profile Card Specific Styles */
+.card.profile {
+    text-align: center; 
 }
 
-.profile img {
-    width: 100px;
-    height: 100px;
+.card.profile img {
+    width: 180px; 
+    height: 180px;
+    object-fit: cover; 
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 20px; 
+    box-shadow:
+        4px 4px 8px #c8d0e7, 
+        -4px -4px 8px #fff;
+}
+
+.card.profile h2 {
+    font-size: 24px; 
+    margin-top: 15px;
+    color: #4a4e69;   
+}
+
+.card.profile p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #6c757d;    
+}
+
+/* Project and Contact Card Styles */
+.card h3 { 
+    color: #4a4e69; 
+    margin-bottom: 15px;
 }
 
 .project {
@@ -36,6 +63,18 @@ body {
 }
 
 .project a {
-    color: #333; /* Customize the link color */
+    color: #6c757d; 
     text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+    color: #4a4e69;
+}
+
+/* About Me Section */
+.card.about p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #6c757d;
 }
