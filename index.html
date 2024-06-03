@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stav Harel - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Stav Harel - Portfolio</title>
+  <style>
+    /* Basic Styling (adjust as needed) */
+    body { font-family: sans-serif; }
+    .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card { background-color: #f5f5f5; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px; }
+    .card h2 { margin-top: 0; }
+
+    /* Fix for text overflow */
+    .card.about {
+      width: 80%; /* Adjust to your preference */
+      overflow-wrap: break-word; 
+    }
+
+    /* Responsive Adjustments (Optional) */
+    @media (max-width: 768px) { 
+      .card { width: 100%; } 
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="card profile">
-            <img src="TheMan.jpg" alt="Profile Picture">
-            <h2>Stav Harel</h2>
-            <p>Data Analyst | Sharepoint Administrator | Tech Enthusiast</p>
-        </div>
-
-        <div class="card about">
-            <h3>About Me</h3>
-            <p>
-                Age: 21<br>
-                Currently a Data Analyst<br>
-                3 years of SharePoint administration experience, well-versed in data analysis principles and techniques, ready
-                to turn your spreadsheets into treasure maps (or at least, meaningful insights). Not afraid to experiment – my
-                previous job even had a website dedicated to my data explorations!<br><br>
-        
-                Now, if I made this without an AI chatbot:<br>
-                Age: 21<br>
-                Job: Currently a Data Analyst<br>
-                Previous Experience: 3 Years in SharePoint Administration<br>
-                The Joke: My New Lab is Coming Soon!
-            </p>
-        </div>
-
-        <div class="card projects">
-            <h3>Projects</h3>
-            <div class="project">
-                <h4>Project Title 1</h4>
-                <p>Short description of project 1.</p>
-                <a href="project1-link" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h4>Project Title 2</h4>
-                <p>Short description of project 2.</p>
-                <a href="project2-link" target="_blank">View Project</a>
-            </div>
-            </div>
-
-        <div class="card contact">
-            <h3>Contact Me</h3>
-            <p>Email: stavi.harel@gmail.com</p>
-            <p>GitHub: @Stav-ElevenStar</p>
-        </div>
+  <div class="container">
+    <div class="card profile">
+      <img src="TheMan.jpg" alt="Profile Picture">
+      <h2>Stav Harel</h2>
+      <p>Data Analyst | Sharepoint Administrator | Tech Enthusiast</p>
     </div>
+
+    <div class="card about">
+      <h3>About Me</h3>
+      <p>
+        Age: 21<br>
+        Currently a Data Analyst<br>
+        3 years of SharePoint administration experience, well-versed in data analysis principles and techniques. Ready to turn your spreadsheets into treasure maps (or at least, meaningful insights). Not afraid to experiment – my previous job even had a website dedicated to my data explorations! <br><br>
+
+        Now, if I made this without an AI chatbot:<br>
+        Age: 21<br>
+        Job: Currently a Data Analyst<br>
+        Previous Experience: 3 Years in SharePoint Administration<br>
+        The Joke: My New Lab is Coming Soon!
+      </p>
+    </div>
+
+    <div class="card projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>Project Title 1</h4>
+        <p>Short description of project 1.</p>
+        <a href="project1-link" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h4>Project Title 2</h4>
+        <p>Short description of project 2.</p>
+        <a href="project2-link" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="card contact">
+      <h3>Contact Me</h3>
+      <p>Email: stavi.harel@gmail.com</p>
+      <p>GitHub: @Stav-ElevenStar</p>
+    </div>
+  </div>
 
 </body>
 </html>
