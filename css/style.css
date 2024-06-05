@@ -383,12 +383,12 @@ section{
 
 .portfolio .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap:2rem;
 }
 
 .portfolio .box-container .box{
-    height: 25rem;
+    height: 32rem;
     border-radius: .5rem;
     overflow:hidden;
     box-shadow: var(--box-shadow);
