@@ -381,36 +381,24 @@ section{
     color:#fff;
 }
 
-.portfolio .box-container{
+.portfolio .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:2rem;
+    gap: 2rem;
 }
 
-.portfolio .box-container .box{
+.portfolio .box-container .box {
     position: relative;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    border: 1rem solid transparent;
 }
 
-.portfolio .box-container .box::before{
-    content: '';
+.portfolio .box-container .box img {
     display: block;
     width: 100%;
-    padding-top: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
-
-.portfolio .box-container .box img{
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
 
 .portfolio .box-container .box .content{
     position: absolute;
